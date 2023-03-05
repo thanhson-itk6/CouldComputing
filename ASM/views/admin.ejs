@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="30" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div><%- select_box_str -%> <%- table_str -%></div>
+
+    <div class="m-10 p-5 ml-auto mr-auto">
+      <a
+        class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-10 text-center"
+        href="https://asm.herokuapp.com/logout"
+      >
+        Log out
+      </a>
+    </div>
+    <script>
+      window.setInterval(() => {
+        window.location.reload();
+      }, 10000);
+    </script>
+  </body>
+</html>
