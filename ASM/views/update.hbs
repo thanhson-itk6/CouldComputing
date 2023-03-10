@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update book</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+
+<header>
+<h1 style="text-align:center"><b><strong>Update book</strong></b></h1>
+</header>
+
+<body>
+   <div class="container">
+  <form action="/updateBook" method="post">
+  <input type="hidden" name="_id" value="{{books._id}}">
+    <div class="form-group">
+      <label for="toyname">Book Name:</label>
+      <input type="text" class="form-control" id="bookname" placeholder="Enter Book Name" name="txtName" value="{{books.bookname}}">
+    </div>
+    <div class="form-group">
+      <label for="bookprice">Price:</label>
+      <input type="number" class="form-control" id="bookprice" placeholder="Enter Price" name="txtPrice" value="{{books.bookprice}}">
+    </div>
+    <div class="form-group">
+      <label for="booktype">Type:</label>
+      <input type="text" class="form-control" id="booktype" placeholder="Enter Type" name="txtType" value="{{books.booktype}}">
+    </div>
+    <div class="form-group">
+      <label for="bookreview">Review:</label>
+      <input type="text" class="form-control" id="bookreview" placeholder="Enter Review" name="txtReview" value="{{books.bookreview}}">
+    </div>
+   <div class="form-group">
+      <label for="bookpublicationyear">Publication Year:</label>
+      <input type="number" class="form-control" id="bookpublicationyear" placeholder="Enter Publication Year" name="txtPublicationyear" value="{{books.bookpublicationyear}}">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+    <button class="btn btn-default" onclick="history.back()">Go Back</button>
+  </form>
+</div>
+</body>
+</html>
