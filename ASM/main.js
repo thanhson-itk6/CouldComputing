@@ -19,7 +19,7 @@ app.get('/', (req,res) =>{
     res.render('AllBooks')
 })
 
-// Add toy
+// Add book
 app.get('/create',(req,res)=>{
     res.render('NewBook')
 })
@@ -88,7 +88,7 @@ app.post('/updateBook', async(req,res)=>{
     res.redirect('/ViewAll')
 })
 
-// Delete toy
+// Delete book
 app.get('/delete',async(req,res)=>{
     let id = mongo.ObjectId(req.query.id); 
     const client = await MongoClient.connect(url);

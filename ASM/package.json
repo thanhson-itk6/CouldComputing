@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NguyenKhanh210430/Asm1644"
+    "url": "git+https://github.com/thanhson-itk6/CouldComputing"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NguyenKhanh210430/Asm1644/issues"
+    "url": "https://github.com/thanhson-itk6/CouldComputing"
   },
-  "homepage": "https://github.com/NguyenKhanh210430/Asm1644",
+  "homepage": "https://github.com/thanhson-itk6/CouldComputing",
   "dependencies": {
     "express": "^4.18.2",
     "express-session": "^1.17.3",
